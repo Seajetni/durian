@@ -29,10 +29,10 @@ export default function Home() {
     };
   }, []);
 
-  const contentRef = useRef(null);
+  const headRef = useRef(null);
   const contectRef = useRef(null);
   const mainRef = useRef(null);
-  const aboutRef = useRef(null);
+  const productRef = useRef(null);
 
   const scrollToComponent = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -41,7 +41,12 @@ export default function Home() {
   return (
     <>
    
-    <StickyNavbar/>
+    <StickyNavbar
+     scrollTo={scrollToComponent}
+     headRef={headRef}
+     contectRef={contectRef}
+     mainRef={mainRef}
+     productRef={productRef}/>
    
     {showButton && (
         <button
@@ -70,12 +75,24 @@ export default function Home() {
         </button>
       )}
 
-    <Head/>
+     <div ref={headRef}>
+     <Head/>
+     </div>
+  
+    <div ref={mainRef}>
     <Main1/>
+    </div>
+   
     <Review/>
+    <div ref={productRef}>
     <Products/>
+    </div>
+ 
     <Secured/>
+    <div  ref={contectRef}>
     <Contect/>
+    </div>
+    
     <Footer/>
     </>
   );

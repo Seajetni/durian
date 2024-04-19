@@ -12,9 +12,9 @@ import {
 
 const StickyNavbar = ({
   scrollTo,
-  contentRef,
+  headRef,
   contectRef,
-  aboutRef,
+  productRef,
   mainRef,
 }) => {
   const [openNav, setOpenNav] = useState(false);
@@ -94,7 +94,7 @@ const StickyNavbar = ({
 
         <button
           className="flex items-center"
-          onClick={() => scrollTo(contentRef)}
+          onClick={() => scrollTo(headRef)}
         >
           รายละเอียด
         </button>
@@ -122,9 +122,9 @@ const StickyNavbar = ({
 
         <button
           className="flex items-center"
-          onClick={() => scrollTo(aboutRef)}
+          onClick={() => scrollTo(productRef)}
         >
-          ทำไมต้องซื้อกับ ฉ่ำฉ่ำ
+          สินค้าของเรา
         </button>
       </Typography>
       <Typography
