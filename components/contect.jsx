@@ -16,7 +16,9 @@ export default function Contect() {
           <div className="lg:w-1/4 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
             <div className=" text-lg">
               <div className=" flex justify-center  lg:justify-start lg:items-start ">
-                <h2 className=" text-2xl text-black my-2">ช่องทางการสั่งซื้อ</h2>
+                <h2 className=" text-2xl text-black my-2">
+                  ซื้อเลยตอนนี้
+                </h2>
               </div>
               <div className=" flex flex-col justify-center items-center lg:justify-start lg:items-start ">
                 <Typography as={"a"} href="https://lin.ee/SCYHXfq">
@@ -73,12 +75,15 @@ export default function Contect() {
                     </span>
                   </Button>
                 </Typography>
+                <p>
+                  เพียงท่านทัก Inbox หรือ โทรและแจ้งโค๊ดลับว่า “ฉ่ำฉ่ำ1”
+                  ทีมงานจะล็อคสิทธิ์รับประกันให้ทันที!!
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    
     </div>
   );
 }

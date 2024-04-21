@@ -2,13 +2,10 @@ import Contect from "@/components/contect";
 import Footer from "@/components/footer";
 import Head from "@/components/head";
 import Main1 from "@/components/main";
-import Main from "@/components/main";
 import StickyNavbar from "@/components/nav";
 import Products from "@/components/products";
-import Review from "@/components/review";
-import Secured from "@/components/secured";
+import Send from "@/components/send";
 import { useEffect, useRef, useState } from "react";
-
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -40,15 +37,15 @@ export default function Home() {
 
   return (
     <>
-   
-    <StickyNavbar
-     scrollTo={scrollToComponent}
-     headRef={headRef}
-     contectRef={contectRef}
-     mainRef={mainRef}
-     productRef={productRef}/>
-   
-    {showButton && (
+      <StickyNavbar
+        scrollTo={scrollToComponent}
+        headRef={headRef}
+        contectRef={contectRef}
+        mainRef={mainRef}
+        productRef={productRef}
+      />
+
+      {showButton && (
         <button
           className="fixed bottom-4 right-4 w-12 h-12 text-center flex items-center justify-center rounded-full text-white   bg-green-700  z-10"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -75,25 +72,26 @@ export default function Home() {
         </button>
       )}
 
-     <div ref={headRef}>
-     <Head/>
-     </div>
-  
-    <div ref={mainRef}>
-    <Main1/>
-    </div>
-   
-    <Review/>
-    <div ref={productRef}>
-    <Products/>
-    </div>
- 
-    <Secured/>
-    <div  ref={contectRef}>
-    <Contect/>
-    </div>
+      <div ref={headRef}>
+        <Head />
+      </div>
+      <div className="   h-10"/>
+      <div ref={productRef}>
+        <Products />
+      </div>
+<div className="   h-10"/>
+      <div ref={mainRef}>
+        <Main1 />
+      </div>
+
     
-    <Footer/>
+
+      <Send/>
+      <div ref={contectRef}>
+        <Contect />
+      </div>
+
+      <Footer />
     </>
   );
 }

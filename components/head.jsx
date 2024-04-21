@@ -4,7 +4,7 @@ import StickyNavbar from "./nav";
 
 export default function Head() {
   return (
-    <div className="bg-[url(https://wallpaperaccess.com/full/5765145.jpg)] bg-cover ">
+    <div className="bg-[url(/eiei.png)] bg-cover ">
       <div className=" hidden lg:flex lg:flex-col">
         <div></div>
         <div className=" flex justify-around items-center">
@@ -27,7 +27,7 @@ export default function Head() {
           </div>
           <div>
             <Image
-              src={"/product.png"}
+              src={"/product4.png"}
               width={500}
               height={100}
               alt="test"
@@ -61,12 +61,10 @@ export default function Head() {
             </div>
             <div>
               <h2 className=" text-5xl  font-bold text-white">
-                ลองเช็คตัวเองว่ากำลังเป็น
-                <br /> ข้อใดข้อหนี่งอยู่ไหมน้า?
+              ฉ่ำฉ่ำ เนื้อทุเรียนเกรด PREMIUM
               </h2>
               <p className=" bg-green-600 text-white text-center  p-2 my-2">
-                สิ่งที่ต้องรู้ถ้าคุณไม่อยากพลาดได้ทุเรียนตกเกรด
-                และต้องรู้สึกเหมือนเสียเงินฟรี
+              การันตีได้เลยว่าเงินทุกบาทที่จ่าย ไม่เสียเปล่า ได้กินของอร่อยทุกคำ 
               </p>
             </div>
             <div>
@@ -101,7 +99,7 @@ export default function Head() {
           </div>
         </div>
         <div className="flex justify-end relative top-96">
-          <Image alt="" src={"/product.png"} width={300} height={100} className="" />
+          <Image alt="" src={"/product4.png"} width={300} height={100} className="" />
         </div>
         </div>
       

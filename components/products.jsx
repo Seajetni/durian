@@ -1,41 +1,79 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import { Avatar } from "@material-tailwind/react";
 
 export default function Products() {
   return (
-    <div className=' bg-[url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1776&q=80)] bg-cover'>
-   <div id="header" className=' py-10'>
-    <h1>ต้องลองแล้วแหละจริงไหม?</h1>
-<h1>ทุเรียนแกะพร้อมทาน “ฉ่ำฉ่ำ”  มี 2 แบบให้เลือก</h1>
-  </div>
-<div className="container">
-<div className="card">
-  <div className="card-image ">
-    <img src="/product3.png" className=' '/>
-  </div>
-  <div className="card-text">
-    <h2 className="card-title">ทุเรียนหมอนทอง</h2>
-    <p className="card-body">ทุเรียนหมอนทองแกะเนื้อคัดเกรด ขนาด 500 g / 1 kg
-คัดอย่างดี หวานฉ่ำ อร่อยทุกคำ.</p>
-  </div>
-  <div className="card-price">฿xxx</div>
-</div>
-  <div className="card">
-  <div className="card-image">
-    <img src="/product2.png"/>
-  </div>
-  <div className="card-text">
-    <h2 className="card-title">ทุเรียนเบญจพรรณ</h2>
-    <p className="card-body">ทุเรียนเบญจพรรณ บรรจุในแพ็คเกจสุดพรีเมียมใน 1 กล่องจะมีทุเรียน 4 สายพันธุ์
-หายาก คัดสรรมาอย่างพิถีพิถัน เนื้อหอมหวานมันทุกสัมผัสเป็นทุเรียนที่ไม่ใช่ใครจะกินได้
-ต้องทุเรียนเบญจพรรณจากร้านเราเท่านั้น</p>
-  </div>
-  <div className="card-price">฿xxx</div>
-</div>
+    <div>
+      <div>
+        <div className=" bg-[url('https://i2.wp.com/files.123freevectors.com/wp-content/original/130926-abstract-blue-and-orange-polygon-triangle-background.jpg')]  bg-top ">
+        <h1 className=" text-5xl pt-10 text-white text-center lg:hidden">  <a  className=" ">ฉ่ำฉ่ำ</a>   <br /> มี 2 แบบให้เลือก</h1>
+          <div className=" flex lg:justify-between flex-col-reverse lg:flex-row ">
+            <div>
+              <div  className="lg:flex justify-center hidden">
+              <Avatar src="/logo.png" className=" w-72 h-72     " />
+              </div>
+             
+              <div className=" bg-white bg-opacity-75 text-xl mx-10  h-96 rounded-3xl lg:px-10 lg:flex hidden lg:flex-col">
+              
+                <h1 className=" text-center py-4 text-4xl  font-bold">ทุเรียนแกะพร้อมทาน “ฉ่ำฉ่ำ” มี 2 แบบให้เลือก</h1>
 
+                <p className=" ">
+                  1.ทุเรียนหมอนทองแกะเนื้อคัดเกรด ขนาด 800 g / 1 kg คัดอย่างดี
+                  หวานฉ่ำ อร่อยทุกคำ
+                </p>
+                <p className="line-clamp-3">
+                  2. ทุเรียนเบญจพรรณ บรรจุในแพ็คเกจสุดพรีเมียมใน 1 กล่องจะมีทุเรียน 4 สายพันธุ์ หายาก คัดสรรมาอย่างพิถีพิถันเนื้อหอมหวานมันทุกสัมผัสเป็นทุเรียนที่ไม่ใช่ใครจะกินได้ต้องทุเรียนเบญจพรรณจากร้านเราเท่านั้น
+                </p>
+              </div>
+            </div>
+            <div className="  drop-shadow-2xl">
+              <div className="flex flex-col lg:flex-row  lg:mr-20 mt-10">
+                <div>
+                  <div className="flex flex-col  relative top-32">
+                    <Image
+                      src={"/product.png"}
+                      alt=""
+                      width={800}
+                      height={100}
+                      className=" w-[400px] lg:w-[800px] relative bottom-16"
+                    />
+                    <Image
+                      src={"/product3.png"}
+                      alt=""
+                      width={800}
+                      height={100}
+                      className=" w-[400px] lg:w-[800px]  bottom-72   lg:right-24  relative "
+                    />
+                    <p className="  text-xl relative bottom-48 mx-2 flex lg:hidden bg-white bg-opacity-75 px-10 rounded-3xl"> ทุเรียนเบญจพรรณ บรรจุในแพ็คเกจสุดพรีเมียมใน 1 กล่องจะมีทุเรียน 4 สายพันธุ์ หายาก คัดสรรมาอย่างพิถีพิถันเนื้อหอมหวานมันทุกสัมผัสเป็นทุเรียนที่ไม่ใช่ใครจะกินได้ต้องทุเรียนเบญจพรรณจากร้านเราเท่านั้น</p>
+                  </div>
+                </div>
 
-
-</div>
+                <div className=" relative lg:right-32 ">
+                  <div>
+                    <Image
+                      src={"/product4.png"}
+                      alt=""
+                      width={800}
+                      height={100}
+                      className="w-[400px] lg:w-[800px]"
+                    />
+                    <Image
+                      src={"/product2.png"}
+                      alt=""
+                      width={800}
+                      height={100}
+                      className=" w-[400px] bottom-72 lg:w-[800px] right-0 lg:right-12  relative "
+                    />
+                      <p className="  text-xl relative bottom-48 mx-2 flex lg:hidden bg-white bg-opacity-75 px-10 rounded-3xl">ทุเรียนหมอนทองแกะเนื้อคัดเกรด ขนาด 800 g / 1 kg คัดอย่างดี
+                  หวานฉ่ำ อร่อยทุกคำ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
- 
-  )
+  );
 }
