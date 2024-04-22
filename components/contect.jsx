@@ -4,7 +4,7 @@ export default function Contect() {
   return (
     <div>
       <section className="text-gray-600 body-font relative">
-        <div className="absolute inset-0 bg-gray-300">
+        <div className="absolute inset-0 bg-gray-300 ">
           <iframe
             width="100%"
             height="100%"
@@ -13,7 +13,7 @@ export default function Contect() {
           ></iframe>
         </div>
         <div className="container px-5 py-24 mx-auto flex">
-          <div className="lg:w-1/4 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+          <div className="lg:w-fit md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
             <div className=" text-lg">
               <div className=" flex justify-center  lg:justify-start lg:items-start ">
                 <h2 className=" text-2xl text-black my-2">
@@ -76,7 +76,7 @@ export default function Contect() {
                   </Button>
                 </Typography>
                 <p>
-                  เพียงท่านทัก Inbox หรือ โทรและแจ้งโค๊ดลับว่า “ฉ่ำฉ่ำ1”
+                  เพียงท่านทัก Inbox หรือ โทรและแจ้งโค๊ดลับ <br /> ว่า  “ฉ่ำฉ่ำ1”  
                   ทีมงานจะล็อคสิทธิ์รับประกันให้ทันที!!
                 </p>
               </div>

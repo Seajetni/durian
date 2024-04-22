@@ -9,7 +9,7 @@ export default function Head() {
         <div></div>
         <div className=" flex justify-around items-center">
           <div>{""}</div>
-          <div className=" flex  m-2 relative left-64">
+          <div className=" flex  m-2 relative left-64 bottom-10">
             <div className="  flex text-3xl">
               <div className="p-2 mr-2">
                 <p className="font-bold  text-white">MADE</p>

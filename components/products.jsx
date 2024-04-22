@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Avatar } from "@material-tailwind/react";
+import Card from "./card";
 
 export default function Products() {
   return (
@@ -14,18 +15,7 @@ export default function Products() {
               <Avatar src="/logo.png" className=" w-72 h-72     " />
               </div>
              
-              <div className=" bg-white bg-opacity-75 text-xl mx-10  h-96 rounded-3xl lg:px-10 lg:flex hidden lg:flex-col">
-              
-                <h1 className=" text-center py-4 text-4xl  font-bold">ทุเรียนแกะพร้อมทาน “ฉ่ำฉ่ำ” มี 2 แบบให้เลือก</h1>
-
-                <p className=" ">
-                  1.ทุเรียนหมอนทองแกะเนื้อคัดเกรด ขนาด 800 g / 1 kg คัดอย่างดี
-                  หวานฉ่ำ อร่อยทุกคำ
-                </p>
-                <p className="line-clamp-3">
-                  2. ทุเรียนเบญจพรรณ บรรจุในแพ็คเกจสุดพรีเมียมใน 1 กล่องจะมีทุเรียน 4 สายพันธุ์ หายาก คัดสรรมาอย่างพิถีพิถันเนื้อหอมหวานมันทุกสัมผัสเป็นทุเรียนที่ไม่ใช่ใครจะกินได้ต้องทุเรียนเบญจพรรณจากร้านเราเท่านั้น
-                </p>
-              </div>
+              <Card/>
             </div>
             <div className="  drop-shadow-2xl">
               <div className="flex flex-col lg:flex-row  lg:mr-20 mt-10">

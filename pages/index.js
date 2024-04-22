@@ -4,7 +4,7 @@ import Head from "@/components/head";
 import Main1 from "@/components/main";
 import StickyNavbar from "@/components/nav";
 import Products from "@/components/products";
-import Send from "@/components/send";
+import Send from "@/components/card";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         setShowButton(false);
       }
     };
-
+console.log(window.innerHeight);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -86,7 +86,7 @@ export default function Home() {
 
     
 
-      <Send/>
+
       <div ref={contectRef}>
         <Contect />
       </div>
