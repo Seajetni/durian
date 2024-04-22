@@ -9,7 +9,7 @@
     margin: 2rem auto;
     border: 8px solid;
     border-image: linear-gradient(
-        -50deg,
+        -10deg,
         green,
         #00b300,
         forestgreen,
@@ -39,7 +39,7 @@
     justify-content: space-between;
     width: 15vmin;
     height: 100%;
-   
+  
     border: 3px solid;
     border-image: linear-gradient(
         to bottom,
@@ -55,7 +55,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 60vmin;
+    width: 65vmin;
     height: 100%;
     background-image: url("/promotion.jpg");
     background-size: cover;
@@ -95,7 +95,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 60vmin;
+    width: 55vmin;
     height: 100%;
     padding: 3vmin 4vmin;
     background: #fff;
@@ -104,10 +104,10 @@
   }
   
   .wrap:hover .overlay {
-    transform: translateX(-60vmin);
+    transform: translateX(-55vmin);
   }
   .wrap:hover .image-content {
-    width: 30vmin;
+    width: 29vmin;
   }
   .wrap:hover .overlay-content {
     border: none;
