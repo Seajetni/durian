@@ -11,9 +11,7 @@ export default function Products() {
         <h1 className=" text-5xl pt-10 text-white text-center lg:hidden">  <a  className=" ">ฉ่ำฉ่ำ</a>   <br /> มี 2 แบบให้เลือก</h1>
           <div className=" flex lg:justify-between flex-col-reverse lg:flex-row ">
             <div>
-              <div  className="lg:flex justify-center hidden">
-              <Avatar src="/logo.png" className=" w-72 h-72     " />
-              </div>
+           
              <div className="   lg:block  hidden">
              <Card/>
              </div>
