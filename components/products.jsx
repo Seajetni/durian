@@ -14,8 +14,10 @@ export default function Products() {
               <div  className="lg:flex justify-center hidden">
               <Avatar src="/logo.png" className=" w-72 h-72     " />
               </div>
+             <div className="   lg:block  hidden">
+             <Card/>
+             </div>
              
-              <Card/>
             </div>
             <div className="  drop-shadow-2xl">
               <div className="flex flex-col lg:flex-row  lg:mr-20 mt-10">
