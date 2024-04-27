@@ -4,7 +4,7 @@ import Head from "@/components/head";
 import Main1 from "@/components/main";
 import StickyNavbar from "@/components/nav";
 import Products from "@/components/products";
-import Send from "@/components/card";
+import Send from "@/components/sean";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         setShowButton(false);
       }
     };
-console.log(window.innerHeight);
+    console.log(window.innerHeight);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -75,17 +75,16 @@ console.log(window.innerHeight);
       <div ref={headRef}>
         <Head />
       </div>
-      <div className="   h-10"/>
+      <div className="   h-10" />
       <div ref={productRef}>
         <Products />
       </div>
-<div className="   h-10"/>
+      <div className="   h-10" />
       <div ref={mainRef}>
         <Main1 />
       </div>
 
-    
-
+      <Send />
 
       <div ref={contectRef}>
         <Contect />

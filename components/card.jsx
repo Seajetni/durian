@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Card() {
   return (
-    <div className="bg-[url(/eiei.png)] bg-bottom  relative left-20 lg:ml-20  ">
+    <div className="bg-[url(/eiei.png)] bg-bottom  lg:relative left-20 lg:ml-20  ">
       <div className="wrap animate pop">
         <div className="overlay">
           <div className="overlay-content animate slide-left delay-2 "></div>
